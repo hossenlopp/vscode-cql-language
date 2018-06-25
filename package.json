@@ -1,0 +1,26 @@
+{
+    "name": "vscode-cql-language",
+    "displayName": "vscode-cql-language",
+    "description": "Provides language syntax highlighting for the HL7 Clinical Quality Language (CQL).",
+    "version": "0.0.1",
+    "publisher": "ProjectTacoma",
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cql",
+            "aliases": ["CQL", "cql"],
+            "extensions": [".cql"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cql",
+            "scopeName": "source.cql",
+            "path": "./syntaxes/cql.tmLanguage.json"
+        }]
+    }
+}
