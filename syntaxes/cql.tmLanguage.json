@@ -78,7 +78,7 @@
 		"name": "keyword.declarations.cql"
 	  },
 	  {
-		"begin": "\\b(define( function)?) (\".+?\")",
+		"begin": "\\b(define( function)?) ((\".*\")|(`.*`)|([^\"`\\s]+))",
 		"beginCaptures": {
 		  "1": {
 			"name": "keyword.declarations.cql"
